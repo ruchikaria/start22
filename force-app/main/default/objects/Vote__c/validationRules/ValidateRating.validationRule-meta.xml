@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidateRating</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(Honesty__c  &lt; 1, Honesty__c  &gt;  10, Delegation__c  &lt; 1, Delegation__c &gt; 10, Commitment__c  &lt; 1, Commitment__c  &gt; 10, Leadership__c  &lt; 1, Leadership__c  &gt; 10 )</errorConditionFormula>
+    <errorMessage>Invalid data: Range should be 1 to 10</errorMessage>
+</ValidationRule>
